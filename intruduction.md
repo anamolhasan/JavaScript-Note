@@ -23,3 +23,33 @@
 
 4. মাল্টি-প্যারাডাইম (Multi-paradigm):
 - এটি অবজেক্ট-ওরিয়েন্টেড (OOP), ফাংশনাল, এবং ইভেন্ট-ড্রিভেন প্রোগ্রামিং স্টাইল সমর্থন করে।
+
+```bash
+// অবজেক্ট-ওরিয়েন্টেড
+class Person {
+  constructor(name) { this.name = name; }
+  greet() { console.log(`Hello, ${this.name}`); }
+}
+const p = new Person("Anik");
+p.greet();
+
+// ফাংশনাল
+const add = (a, b) => a + b;
+console.log(add(2, 3));
+
+// ব্রাউজারে ইভেন্ট-ড্রিভেন উদাহরণ
+const button = document.createElement('button');
+button.textContent = 'Click me';
+document.body.appendChild(button);
+
+button.addEventListener('click', () => {
+  alert('Hi there!');
+});
+```
+#### প্রতিটি জায়গায় চলে (Runs everywhere):
+- ব্রাউজারে (ক্লায়েন্ট-সাইড ইন্টারঅ্যাক্টিভিটির জন্য)
+- সার্ভারে (Node.js ব্যবহার করে)
+---
+## **সারসংক্ষেপ:**
+
+**** জাভাস্ক্রিপ্ট হলো সিঙ্গল-থ্রেডেড, ডিফল্টভাবে সিঙ্ক্রোনাস প্রোগ্রামিং ভাষা, যার শক্তিশালী অ্যাসিঙ্ক্রোনাস ফিচার আছে। এটি ওয়েব অ্যাপ্লিকেশনকে ইন্টারঅ্যাকটিভ, গতিশীল এবং রেসপন্সিভ করার জন্য ডিজাইন করা হয়েছে।****
